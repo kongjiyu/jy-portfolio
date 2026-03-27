@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jy-portfolio.vercel.app/</loc>
+    <loc>https://jy-portfolio-six.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/projects</loc>
+    <loc>https://jy-portfolio-six.vercel.app/projects</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/projects/learnbim</loc>
+    <loc>https://jy-portfolio-six.vercel.app/projects/learnbim</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/projects/remembry</loc>
+    <loc>https://jy-portfolio-six.vercel.app/projects/remembry</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/projects/dotivra</loc>
+    <loc>https://jy-portfolio-six.vercel.app/projects/dotivra</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/projects/ifounder</loc>
+    <loc>https://jy-portfolio-six.vercel.app/projects/ifounder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/experience</loc>
+    <loc>https://jy-portfolio-six.vercel.app/experience</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/hackathons</loc>
+    <loc>https://jy-portfolio-six.vercel.app/hackathons</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jy-portfolio.vercel.app/education</loc>
+    <loc>https://jy-portfolio-six.vercel.app/education</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

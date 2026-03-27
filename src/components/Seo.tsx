@@ -34,7 +34,7 @@ const Seo = ({
   type = 'website',
 }: SeoProps) => {
   useEffect(() => {
-    const siteUrl = import.meta.env.VITE_SITE_URL ?? 'https://jy-portfolio.vercel.app';
+    const siteUrl = import.meta.env.VITE_SITE_URL ?? 'https://jy-portfolio-six.vercel.app';
     const normalizedPath = path.startsWith('/') ? path : `/${path}`;
     const fullUrl = `${siteUrl}${normalizedPath}`;
     const fallbackImage = `/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(imageSubtitle)}`;

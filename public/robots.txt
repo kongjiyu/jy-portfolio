@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jy-portfolio.vercel.app/sitemap.xml
+Sitemap: https://jy-portfolio-six.vercel.app/sitemap.xml

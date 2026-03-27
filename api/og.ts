@@ -40,7 +40,7 @@ export default function handler(request: Request) {
     <text x="56" y="348" font-size="34" fill="#9ca3af" letter-spacing="1.5">${subtitle}</text>
 
     <text x="56" y="584" font-size="24" fill="#d1d5db">Apple Swift Student Challenge 2026 Winner</text>
-    <text x="836" y="584" font-size="24" fill="#d1d5db">jy-portfolio.vercel.app</text>
+    <text x="808" y="584" font-size="24" fill="#d1d5db">jy-portfolio-six.vercel.app</text>
   </g>
 </svg>`;
 
