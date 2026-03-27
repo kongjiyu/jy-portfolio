@@ -1,4 +1,5 @@
-import { useState, useEffect, FC } from 'react';
+import { useState, useEffect } from 'react';
+import type { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Terminal } from 'lucide-react';
 

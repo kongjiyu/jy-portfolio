@@ -1,4 +1,5 @@
-import { useRef, useMemo, FC } from 'react';
+import { useRef, useMemo } from 'react';
+import type { FC } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
@@ -6,7 +7,7 @@ const TopographicWave: FC = () => {
   const meshRef = useRef<THREE.Points>(null);
   const mouseWorldPos = useRef(new THREE.Vector3(0, 0, 0));
   
-  const { positions, segments } = useMemo(() => {
+  const positions = useMemo(() => {
     const size = 12;
     const segs = 80;
     const pos = [];
@@ -19,7 +20,7 @@ const TopographicWave: FC = () => {
         pos.push(x, y, 0);
       }
     }
-    return { positions: new Float32Array(pos), segments: segs, size };
+    return new Float32Array(pos);
   }, []);
 
   useFrame((state) => {
