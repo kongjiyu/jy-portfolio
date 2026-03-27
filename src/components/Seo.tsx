@@ -6,11 +6,11 @@ type SeoProps = {
   path?: string;
   keywords?: string;
   image?: string;
+  imageSubtitle?: string;
   type?: 'website' | 'article';
 };
 
 const DEFAULT_SITE_NAME = 'Kong Ji Yu Portfolio';
-const DEFAULT_IMAGE = '/favicon.svg';
 
 const upsertMeta = (selector: string, attribute: 'name' | 'property', value: string) => {
   let tag = document.head.querySelector<HTMLMetaElement>(selector);
@@ -29,14 +29,17 @@ const Seo = ({
   description,
   path = '/',
   keywords,
-  image = DEFAULT_IMAGE,
+  image,
+  imageSubtitle = 'iOS and Full-Stack Projects',
   type = 'website',
 }: SeoProps) => {
   useEffect(() => {
     const siteUrl = import.meta.env.VITE_SITE_URL ?? 'https://jy-portfolio.vercel.app';
     const normalizedPath = path.startsWith('/') ? path : `/${path}`;
     const fullUrl = `${siteUrl}${normalizedPath}`;
-    const imageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+    const fallbackImage = `/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(imageSubtitle)}`;
+    const selectedImage = image ?? fallbackImage;
+    const imageUrl = selectedImage.startsWith('http') ? selectedImage : `${siteUrl}${selectedImage}`;
 
     document.title = `${title} | ${DEFAULT_SITE_NAME}`;
 
@@ -64,7 +67,7 @@ const Seo = ({
       document.head.appendChild(canonical);
     }
     canonical.setAttribute('href', fullUrl);
-  }, [description, image, keywords, path, title, type]);
+  }, [description, image, imageSubtitle, keywords, path, title, type]);
 
   return null;
 };
