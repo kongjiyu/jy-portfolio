@@ -3,6 +3,7 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import Section from '../components/Section';
 import { projects, type ProjectSummary } from '../data/projects';
+import Seo from '../components/Seo';
 
 const ProjectCard: FC<{ p: ProjectSummary; i: number }> = ({ p, i }) => {
   const x = useMotionValue(0);
@@ -68,6 +69,12 @@ const Projects: FC = () => {
       exit={{ opacity: 0, y: -18, filter: 'blur(6px)' }}
       transition={{ duration: 0.52, ease: [0.22, 1, 0.36, 1] }}
     >
+      <Seo
+        title="Projects"
+        description="Project portfolio of Kong Ji Yu featuring LearnBIM, remembry, Dotivra, and iFounder with technical summaries and outcomes."
+        path="/projects"
+        keywords="portfolio projects, LearnBIM, remembry, Dotivra, iFounder, React, SwiftUI"
+      />
       <section className="page-header container">
         <h1 className="text-xs">// TECHNICAL_ARCHIVE</h1>
         <p className="page-title">SELECTED <br /> BUILDS.</p>

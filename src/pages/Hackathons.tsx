@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
+import Seo from '../components/Seo';
 
 const Hackathons: FC = () => {
   const achievements = [
@@ -32,6 +33,12 @@ const Hackathons: FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <Seo
+        title="Hackathons"
+        description="Hackathon and competition achievements of Kong Ji Yu, including Swift Student Challenge 2026 winner and CodeNection 2025 top 3 finish."
+        path="/hackathons"
+        keywords="hackathon, Swift Student Challenge 2026, CodeNection 2025, Kong Ji Yu"
+      />
       <section className="page-header container">
         <h1 className="text-xs">// COMPETITION_HISTORY</h1>
         <p className="page-title">HACKATHON <br /> ARCHIVE.</p>

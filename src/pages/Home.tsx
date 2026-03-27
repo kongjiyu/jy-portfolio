@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import TheCore from '../components/TheCore';
+import Seo from '../components/Seo';
 
 const Home: FC = () => {
   const recentLogs = [
@@ -18,6 +19,12 @@ const Home: FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <Seo
+        title="Home"
+        description="Portfolio of Kong Ji Yu, Apple Swift Student Challenge 2026 Winner and Software Engineering student building iOS and full-stack projects."
+        path="/"
+        keywords="Kong Ji Yu, software engineer, iOS developer, SwiftUI, React, TypeScript, portfolio"
+      />
       <section className="hero container">
         <div className="hero-split">
           <motion.div 

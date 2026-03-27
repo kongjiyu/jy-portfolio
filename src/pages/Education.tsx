@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { motion } from 'framer-motion';
 import Section from '../components/Section';
+import Seo from '../components/Seo';
 
 const Education: FC = () => {
   const education = [
@@ -27,6 +28,12 @@ const Education: FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <Seo
+        title="Education"
+        description="Academic background of Kong Ji Yu at TAR UMT, including Diploma in Computer Science and Bachelor of Software Engineering."
+        path="/education"
+        keywords="TAR UMT, Software Engineering, Computer Science, CGPA 3.96, Kong Ji Yu"
+      />
       <section className="page-header container">
         <h1 className="text-xs">// ACADEMIC_RECORD</h1>
         <p className="page-title">LEARNING <br /> FOUNDATION.</p>

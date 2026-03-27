@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { motion } from 'framer-motion';
 import Section from '../components/Section';
+import Seo from '../components/Seo';
 
 const Experience: FC = () => {
   const experiences = [
@@ -37,6 +38,12 @@ const Experience: FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <Seo
+        title="Experience"
+        description="Professional experience of Kong Ji Yu across founding, CRM consulting, cloud systems, and software project delivery."
+        path="/experience"
+        keywords="software engineering experience, CRM consultant, founder, cloud intern, Kong Ji Yu"
+      />
       <section className="page-header container">
         <h1 className="text-xs">// PROFESSIONAL_TIMELINE</h1>
         <p className="page-title">WORK <br /> EXPERIENCE.</p>

@@ -3,6 +3,7 @@ import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Section from '../components/Section';
 import { projectDetails, type ProjectSlug } from '../data/projects';
+import Seo from '../components/Seo';
 
 const isProjectSlug = (value: string | undefined): value is ProjectSlug => {
   if (!value) {
@@ -32,6 +33,12 @@ const ProjectDetail: FC = () => {
       exit={{ opacity: 0, x: -24, filter: 'blur(6px)' }}
       transition={{ duration: 0.52, ease: [0.22, 1, 0.36, 1] }}
     >
+      <Seo
+        title={project.title.replaceAll('_', ' ')}
+        description={project.intro}
+        path={`/projects/${project.slug}`}
+        keywords={`${project.title.replaceAll('_', ' ')}, ${project.tags.join(', ')}, Kong Ji Yu portfolio`}
+      />
       <section className="page-header container">
         <p className="text-xs">// SOFTWARE_BRIEF</p>
         <h1 className="page-title">{project.title}</h1>
